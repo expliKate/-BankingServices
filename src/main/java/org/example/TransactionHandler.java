@@ -13,7 +13,8 @@ public class TransactionHandler
     {
         HashMap<Integer, BankAccount> allAccounts = new HashMap<Integer, BankAccount>();
         int newestAcctID = 0;
-        // Example data.
+
+        // Example data. Update to test different inputs.
         int account_id = 1;         // This obviously makes this logic very breakable, but my goal here is not a full,
                                     // functional banking app, just a demo of how transactions are handled.
         int initialBalance = 100;
@@ -21,7 +22,7 @@ public class TransactionHandler
 
         // Using a collection lets someone test on as many transactions as desired.
         // Adjust the number of transactions and/or the amount to test how deductions are handled.
-        // Right now, only the 4th deduction will be rejected, for occurring to soon after the previous 3.
+        // Right now, only the 4th deduction will be rejected, for occurring too soon after the previous 3.
         ArrayList<Double> transactionAmount = new ArrayList<Double>();
         transactionAmount.add(10.00);
         transactionAmount.add(15.00);
